@@ -27,7 +27,7 @@ resource "aws_rds_cluster_instance" "rds_instances" {
   count                = 1
   identifier           = "${var.rds_instance_name}-${count.index}"
   cluster_identifier   = aws_rds_cluster.rds_cluster.id
-  instance_class       = "db.r5.large"
+  instance_class       = var.rds_instance_class
   engine               = var.rds_engine
   engine_version       = var.rds_engine_version
   db_subnet_group_name = aws_db_subnet_group.rds_subnet_group.name

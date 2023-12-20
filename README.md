@@ -8,7 +8,7 @@ This README outlines the steps for deploying the `todo-app`, a Python Flask appl
 - AWS CLI installed and configured with necessary AWS credentials.
 - AWS Elastic Beanstalk CLI (EB CLI)
 
-## Setup
+## Setup Manually (Recommended for applications without Database)
 
 ### Step 1: Install AWS Elastic Beanstalk CLI
 

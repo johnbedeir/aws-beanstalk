@@ -46,3 +46,8 @@ variable "rds_engine_version" {
   type    = string
   default = "8.0.mysql_aurora.3.02.0"
 }
+
+variable "rds_instance_class" {
+  type    = string
+  default = "db.t3.medium"
+}
