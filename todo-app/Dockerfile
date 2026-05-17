@@ -8,6 +8,9 @@ RUN pip install --upgrade pip
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN useradd --create-home --shell /bin/bash appuser
+USER appuser
+
 EXPOSE 5000
 
 CMD ["python", "./app.py"]
